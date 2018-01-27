@@ -26,3 +26,16 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.film-row {
+  /* display: inline-block; */
+}
+.poster {
+  width: 100%;
+  margin: 0;
+}
+.film-summary {
+  /* float: right; */
+  width: 75%;
+  margin: 0;
+}
