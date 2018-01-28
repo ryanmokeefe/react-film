@@ -6,7 +6,8 @@ class FilmRow extends Component {
         let year = (new Date(this.props.film.release_date)).getFullYear()
 
         return (
-            <div className="film-row">
+            // add onDetailsClick onto each div when clicked:
+            <div className="film-row" onClick={this.props.onDetailsClick}>
                 
                 <FilmPoster film={this.props.film}/>
 

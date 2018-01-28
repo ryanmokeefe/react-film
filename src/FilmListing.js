@@ -3,9 +3,10 @@ import FilmRow from './FilmRow.js'
 
 class FilmListing extends Component {
     render() {
-        let allFilms = this.props.films.map((film, index) => {
+        let allFilms = this.props.films.map((film) => {
             return(
-            <FilmRow  film={film} key={index} />
+                // pass onDetailsClick onto the filmRow to be created with each film iteration:
+            <FilmRow  onDetailsClick={() => this.props.onDetailsClick(film)} film={film} key={film.id} />
         )
             
         })
